@@ -102,7 +102,7 @@ function BookList({ books, onSelectBook }) {
 }
 function Book({ book, onSelectBook }) {
   return (
-    <li onClick={() => onSelectBook(book.title)}>
+    <li>
       <img src={book.image} alt={`${book.title} poster`} />
       <h3>{book.title}</h3>
       <div>
