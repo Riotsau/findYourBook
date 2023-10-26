@@ -91,16 +91,16 @@ function Box({ children }) {
   );
 }
 
-function BookList({ books, onSelectBook }) {
+function BookList({ books }) {
   return (
     <ul className="list list-movies">
       {books?.map((book) => (
-        <Book book={book} key={book.id} onSelectBook={onSelectBook} />
+        <Book book={book} key={book.id} />
       ))}
     </ul>
   );
 }
-function Book({ book, onSelectBook }) {
+function Book({ book }) {
   return (
     <li>
       <img src={book.image} alt={`${book.title} poster`} />
